@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
+  <title>TIMER</title>
+</head>
+<body>
+  <h1>Welcome to the "Exercise-Timer".</h1>
+  <p id="status"></p>
+  <div class="main_content">
+    <h2>Your timer</h2>
+    <div class="timerBlock">
+      <p><span id="timer">10:00</span></p>
+      <button id="start">Start</button> 
+      <button id="stop">Stop</button> 
+      <button id="restart">Restart</button>
+      <button id="settings-button">Settings</button>
+      <div id="settings-modal" >
+        <h2>Settings</h2>
+        <select id="time-select">
+          <option value="600">10 minutes</option>
+          <option value="900">15 minutes</option>
+          <option value="1200">20 minutes</option>
+          <option value="1800">30 minutes</option>
+        </select>
+        <button id="save-settings-button">Save</button>
+        <button id = "back">Back</button>
+      </div>  
+
+    </div>
+    <div class="information">
+      <label>Write your exercise:</label>
+      <input type="text" id="input" placeholder="Exercise..." autofocus> 
+      <button id="addBtn">Add</button>
+      <ul id="exercise">
+        <li>Do push<span class="close"></span></li>
+      </ul>
+      <button id="storageBtn">History</button>
+    </div>
+    <footer>
+      <svg id="play-button" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
+        <path d="M8 5v14l11-7z"/>
+        <path d="M0 0h24v24H0z" fill="none"/>
+      </svg>
+      <svg id="stop-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M6 6h5v12H6zm7 0h5v12h-5z"/>
+        <path d="M0 0h24v24H0z" fill="none"/>
+      </svg>
+      <audio id="music-player" loop>
+        <source src="musicForTraining.mp3" type="audio/mpeg">
+      </audio>
+    </footer>
+    
+    
+  </div>
+  <script src="js/todolist.js"></script>
+  <script src = "js/timer.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/status.js"></script>
+
+</body>
+</html>

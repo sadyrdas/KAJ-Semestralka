@@ -1,0 +1,339 @@
+*{
+  font-family: 'Bebas Neue', cursive;
+  -o-border-image: fill;
+     border-image: fill;
+}
+
+div{
+  display: block;
+}
+
+.information{
+  text-align: center;
+  padding-left: 200px;
+}
+
+h1{
+  text-align: center;
+  color: #305bd0;
+  
+}
+
+@media(max-width: 400px){
+  .main_content{
+    width: 400px;
+    height: 500px;
+    top: 40%;
+    left: 40%;
+    border-radius: 30px;
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    background-color: #1240be;
+    -webkit-box-shadow: 10px 10px 1px royalblue;
+            box-shadow: 10px 10px 1px royalblue;
+    
+  }
+}
+@media(min-width: 1024px){
+  .main_content{
+    width: 900px;
+    height: 500px;
+    top: 40%;
+    left: 50%;
+    border-radius: 30px;
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    background-color: #1240be;
+    -webkit-box-shadow: 10px 10px 1px royalblue;
+            box-shadow: 10px 10px 1px royalblue;
+    
+  }
+}
+
+@media(min-width: 1024px){
+  html, body{
+    background-image: -o-linear-gradient(bottom, #305bd0 0%, #330867 100%);
+    background-image: linear-gradient(to top, #305bd0 0%, #330867 100%);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 250px;
+  }
+}
+
+@media(max-width: 400px){
+  html, body{
+    background-image: -o-linear-gradient(bottom, #305bd0 0%, #330867 100%);
+    background-image: linear-gradient(to top, #305bd0 0%, #330867 100%);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    max-width: 400px;
+  }
+}
+
+
+ul {
+  height: 150px;
+  overflow: auto;
+}
+
+@media(min-width: 1024px){
+  li {
+    width: 150px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin-left: 190px;
+    background-color: royalblue;
+    font-size: 20px;
+    color: white;
+    border: black;
+    border-style: groove;
+   
+  }
+}
+@media(max-width: 400px){
+  li {
+    width: 100px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    background-color: royalblue;
+    font-size: 20px;
+    color: white;
+    border: black;
+    border-style: groove;
+   
+  }
+}
+
+@media(max-width: 400px){
+  #input {
+    border: none;
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+}
+
+@media(min-width: 1024px){
+  #input {
+    border: none;
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+}
+
+
+.close {
+  padding: 12px 12px 10px 12px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+@media(min-width: 1024px){
+  #addBtn {
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    background-color: royalblue;
+    color: white;
+    padding: 10px;
+  }
+}
+
+
+@media(max-width: 400px){
+  #addBtn {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: royalblue;
+    color: white;
+  }
+}
+
+@media(max-width: 400px){
+  #addBtn:hover {
+    background-color: #bbb;
+    
+  }
+}
+
+@media(min-width: 1024px){
+  #addBtn:hover {
+    background-color: #bbb;
+    width: 60px;
+    -webkit-transition: 5s;
+    -o-transition: 5s;
+    transition: 3s;
+  }
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+#timer{
+  background-color: royalblue;
+  font-size: 80px;
+  color: white;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  padding: 10px 10px 10px 10px;
+}
+
+.timerBlock{
+  float: left;
+  padding-left: 50px;
+}
+
+@media(min-width: 1024px){
+  #start, #stop, #restart, #settings-button, #save-settings-button, #back{
+    background-color: royalblue;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: 400px){
+  #start, #stop, #restart, #settings-button, #save-settings-button, #back{
+    background-color: royalblue;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media(min-width: 1024px){
+  #restart:hover{
+    background-color: royalblue;
+    font-size: 20px;
+    color: white;
+    animation: rotate 4s linear infinite;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(30deg) rotateY(30deg) rotateZ(360deg);
+    }
+  }
+}
+
+@media(max-width: 400px){
+  #storageBtn {
+    background-color: royalblue;
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-top: 100px;
+    margin-right: 20px;
+  }
+
+}
+
+@media(min-width: 1024px){
+  #storageBtn {
+    background-color: royalblue;
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-right: 60px;
+  }
+}
+
+
+@media(max-width: 400px) {
+  #play-button {
+    background-color: royalblue;
+    width: 65px;
+    height: 65px;
+    border-radius: 120px;
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    fill: white;
+    display: inline-block;
+  }
+}
+
+@media(max-width: 400px) {
+  #stop-button {
+    background-color: royalblue;
+    width: 65px;
+    height: 65px;
+    border-radius: 120px;
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    fill: white;
+    display: none;
+  }
+}
+
+@media(min-width: 1024px){
+  #play-button {
+    background-color: royalblue;
+    width: 65px;
+    height: 65px;
+    border-radius: 120px;
+    position: absolute;
+    bottom: 10px;
+    left: 700px;
+    fill: white;
+    display: inline-block;
+  }
+}
+
+@media(min-width: 1024px){
+  #stop-button {
+    background-color: royalblue;
+    width: 65px;
+    height: 65px;
+    border-radius: 120px;
+    position: absolute;
+    bottom: 10px;
+    left: 700px;
+    fill: white;
+    display: none;
+  }
+}
+
+
+#time-select{
+  width: 150px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  background-color: royalblue;
+  font-size: 16px;
+  color: white;
+}
